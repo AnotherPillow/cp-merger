@@ -79,7 +79,7 @@ def main():
 
             outputContent["ConfigSchema"][configKey] = config
         
-        for token in default(content, "DynamicTokens", []): # TODO: CHECK IF DICTIONARY OR LIST
+        for token in default(content, "DynamicTokens", []):
             if "DynamicTokens" not in outputContent:
                 outputContent["DynamicTokens"] = []
 
